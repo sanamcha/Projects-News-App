@@ -28,20 +28,14 @@ app = Flask(__name__)
 # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL',"postgresql:///breaking_news_app") 
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL',"postgres:///breaking_news_app") 
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY','12345secretkey67890')
 
-print('************************')
-print('************************')
-print('************************')
-print(app.config['SECRET_KEY'])
-print('************************')
-print('************************')
-print('************************')
+
 
 # app.config['DEBUG'] = True
 
