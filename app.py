@@ -35,6 +35,14 @@ app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY','12345secretkey67890')
 
+print('************************')
+print('************************')
+print('************************')
+print(app.config['SECRET_KEY'])
+print('************************')
+print('************************')
+print('************************')
+
 # app.config['DEBUG'] = True
 
 db = SQLAlchemy(app)
